@@ -1,0 +1,195 @@
+#page-create-point{
+    width: 90%;
+    max-width: 1100px;
+
+    /*alinhamento de caixa (pelo lado de fora)*/
+    margin: 0 auto;
+}
+
+
+#page-create-point header{
+    margin-top: 48px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-create-point header a {
+    display: flex;
+
+    color: var(--primary-color);
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+#page-create-point header a span{
+    margin-right: 16px;
+    display: flex;
+
+    background-image: url('/assets/arrow-left.svg');
+
+    width: 20px;
+    height: 22px;
+}
+
+form{
+    background-color: white;
+    
+    /**preenchimento**/
+    padding: 64px;
+    margin: 80px auto;
+
+    border-radius: 8px;
+
+    max-width: 730px;
+}
+
+form h1 {
+    font-size:36px;
+}
+
+form fieldset{
+    margin-top:64px;
+    
+    border: 0;
+}
+
+form legend{
+    margin-bottom: 40px;
+}
+
+form legend{
+    margin-bottom: 40px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 100%;
+}
+
+form legend h2{
+    font-size: 24px;
+}
+
+form legend span{
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+form .field{
+    /*preencher todo espaço flex da linha*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 24px;
+}
+
+form .field-group{
+    display: flex;
+}
+
+form input,
+form select{
+    background-color: #f0f0f5;
+
+    border:0;
+    padding: 16px 24px;
+    font-size: 16px;
+
+    /*contorno ao redor da caixa de input ou digitação*/
+    outline: none;
+    
+    border-radius: 8px;
+}
+
+form select{
+    /*retirar setas da caixa de seleção*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+form .field-group .field + .field{
+    margin-left: 24px;
+}
+
+form button{
+    width: 260px;
+    height: 56px;
+
+    background-color: var(--secondary-color) ;
+    border-radius: 8px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+    border: 0;
+
+    margin-top: 40px;
+
+    /*transição apenas no background*/
+    transition: background-color 400ms;
+}
+
+form button:hover{
+    background-color: #2fb86e;
+}
+
+/***ITENS DE COLETA***/
+
+.items-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap:16px;
+}
+
+.items-grid li{
+    list-style: none;
+    background-color: #f5f5f5;
+
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+
+    height: 180px;
+
+    padding: 32px 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.items-grid li span{
+    flex:1;
+    display: flex;
+    align-items: center;
+
+    color:var(--primary-color)
+}
+
+.items-grid li.selected{
+    background-color: #e1faec;
+    border: 2px solid #34cb79;
+}
+
+/*não há eventos ao clicar na imagem ou no texto*/
+.items-grid li img,
+.items-grid li span{
+    pointer-events: none;
+}
