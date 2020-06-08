@@ -1,6 +1,6 @@
 # Ecoleta # - Em construção
 ---
 ## Tasks ##
-- [x] Front End - Andamento
-- [x] Back End - Andamento
-- [x] Data Bank - Não iniciado
+- [x] Front End - Finalizado
+- [x] Back End - Finalizado
+- [x] Data Bank - Finalizado
