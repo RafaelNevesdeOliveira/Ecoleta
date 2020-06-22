@@ -2,7 +2,6 @@
     width: 90%;
     max-width: 1100px;
 
-    /*alinhamento de caixa (pelo lado de fora)*/
     margin: 0 auto;
 }
 
@@ -37,7 +36,6 @@
 form{
     background-color: white;
     
-    /**preenchimento**/
     padding: 64px;
     margin: 80px auto;
 
@@ -80,7 +78,6 @@ form legend span{
 }
 
 form .field{
-    /*preencher todo espaço flex da linha*/
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -100,14 +97,12 @@ form select{
     padding: 16px 24px;
     font-size: 16px;
 
-    /*contorno ao redor da caixa de input ou digitação*/
     outline: none;
     
     border-radius: 8px;
 }
 
 form select{
-    /*retirar setas da caixa de seleção*/
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -137,7 +132,6 @@ form button{
 
     margin-top: 40px;
 
-    /*transição apenas no background*/
     transition: background-color 400ms;
 }
 
