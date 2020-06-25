@@ -1,4 +1,4 @@
-const express = require("express")
+/* const express = require("express")
 const server = express()
 
 const db = require("./database/db")
@@ -76,4 +76,4 @@ server.get("/search-results", function(req,res){
     })
 })
 
-server.listen(3000)
+server.listen(3000) */

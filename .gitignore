@@ -1,2 +1,4 @@
 
 node_modules
+src/server.js
+src/database/db.js
