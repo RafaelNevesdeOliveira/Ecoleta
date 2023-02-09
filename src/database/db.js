@@ -1,4 +1,4 @@
-// importar a dependencia do sqlite
+/* // importar a dependencia do sqlite
 // verbose = configura o sqlite para mandar informações para o terminal
 const sqlite3 = require("sqlite3").verbose()
 
